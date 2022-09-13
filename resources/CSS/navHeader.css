@@ -1,0 +1,32 @@
+* {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing:border-box;
+    margin:0px;
+    padding: 0px;
+}
+
+html {
+    background-color:darkslategray;
+}
+
+nav {
+    background-color:slategrey;
+    position:fixed;
+    min-width:100%;
+    min-height:40px;
+    z-index: 1;
+}
+
+#bannerTitle {
+    font-size: 18px;
+    margin-left: 10px;
+    background-color:slategrey;
+}
+
+.navAnchor {
+    display:inline-block;
+    color:cornflowerblue;
+    background-color: white;
+    padding: 1px 20px;
+    margin:10px 30px 5px;
+}
