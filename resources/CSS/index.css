@@ -1,9 +1,12 @@
-
 h1 {
     position: relative;
-    top: 50px;
+    top: 65px;
+    left: 50px;
+    clear:both;
 }
 
 p {
     margin: 5px 15%;
+    position: relative;
+    top: 75px;
 }
