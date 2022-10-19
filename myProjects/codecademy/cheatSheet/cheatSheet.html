@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Web Programming Cheatsheet!</title>
+        <link href="../../../resources/CSS/navHeader.css" rel="stylesheet">
+        <link href="resources/CSS/cheatSheet.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <a ID="bannerTitle" href="../../../index.html">fom's Site</a>
+            <a class="navAnchor" href="../../myProjects.html">My Projects</a>
+            <a class="navAnchor" href="#">(Placeholder)</a>
+        </nav>
+
+        <heading>
+            <h1>Notes on Webdesign</h1>
+        </heading>
+
+        <main>
+            <section id="CSS">
+                <h2> CSS</h2>
+                <table>
+                    <h3> Selectors</h3>
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Example</th>
+                            <th scope="col">Example's HTML Selected</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Universal Selector</td>
+                            <td><span class="code">* {}</span></td>
+                            <td>All HTML Selected</td>
+                            <td> The universal selector is used to select the entire HTML page.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Tag Selector</td>
+                            <td><span class="code">main {}</span></td>
+                            <td>All Tags Labled "Main"</td>
+                            <td>The tag selector is used to select tags on the html page.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Attribute Selector</td>
+                            <td> <span class="code">[href] {}</span></td>
+                            <td>All elements containing the href attribute.</td>
+                            <td>The Attribute Selector is used to select attributes within an HTML page.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Class Selector</td>
+                            <td><span class="code">.code {}</span></td>
+                            <td>All elements labled with the .code class attribute.</td>
+                            <td>The class selector is used to select any element that contains the named class attribute. Useful for grouping similar elements together.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Specific Tag Selector</td>
+                            <td> <span class="code">img[src="image.jpg"] {}</span></td>
+                            <td>All image elements with the src attribute linking to image.jpg</td>
+                            <td> Used to select a specific element containing a specific tag.</td>
+                        </tr>
+
+                        <tr>
+                            <td>ID Selector</td>
+                            <td><span class="code"> #desc {}</span></td>
+                            <td>Selects the element with the "desc" ID attribute.</td>
+                            <td> The ID selector is used to select a specific element labled with the corosponding ID attribute.</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <p class="tfooters"> Table is organized in specificity. The further down the table you are, the more specific the selector is. More specific selectors override less specific selectors.</p>
+                    </tfoot>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+*{
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin:10px 20%;
+    background-color: bisque;
+}
+
+h1 {
+    color:white;
+}
+
+main{
+    background-image:url("../images/background.JPG");
+    border: 5px solid bisque;
+}
+
+h1 {
+    padding: 0% 25%;
+}
+
+figure {
+    margin:10px 20%;
+    padding:10px auto;
+}
+
+iframe {
+    padding:10px auto;
+}
+
+section {
+    margin: 10px 20%;
+}
+
+p {
+    position:relative;
+    padding:10px 20%;
+    font-size:large;
+    color:midnightblue;
+}
+
+h4 {
+    position:relative;
+    padding:10px 20% 30px 20%;
+    left:200px;
+    color:midnightblue;
+}
+
+#Jvr {
+    padding: 0% auto;
+}
