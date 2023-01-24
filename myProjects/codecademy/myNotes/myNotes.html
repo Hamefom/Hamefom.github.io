@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Web Programming Cheatsheet!</title>
+        <link href="../../../resources/CSS/navHeader.css" rel="stylesheet">
+        <link href="resources/CSS/myNotes.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav>
+            <a ID="bannerTitle" href="../../../index.html">fom's Site</a>
+            <a class="navAnchor" href="../../myProjects.html">My Projects</a>
+            <a class="navAnchor" href="#">(Placeholder)</a>
+        </nav>
+
+        <heading>
+            <h1>Notes on Webdesign</h1>
+        </heading>
+
+        <main>
+            <section id="CSS">
+                <h2> CSS</h2>
+                <h3> Selectors</h3>
+                <table ID="selectors">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Example</th>
+                            <th scope="col">Example's HTML Selected</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Universal Selector</td>
+                            <td><span class="code">* {}</span></td>
+                            <td>All HTML Selected</td>
+                            <td> The universal selector is used to select the entire HTML page.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Tag Selector</td>
+                            <td><span class="code">main {}</span></td>
+                            <td>All Tags Labled "Main"</td>
+                            <td>The tag selector is used to select tags on the html page.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Attribute Selector</td>
+                            <td> <span class="code">[href] {}</span></td>
+                            <td>All elements containing the href attribute.</td>
+                            <td>The Attribute Selector is used to select attributes within an HTML page.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Class Selector</td>
+                            <td><span class="code">.code {}</span></td>
+                            <td>All elements labled with the .code class attribute.</td>
+                            <td>The class selector is used to select any element that contains the named class attribute. Useful for grouping similar elements together.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Specific Tag Selector</td>
+                            <td> <span class="code">img[src="image.jpg"] {}</span></td>
+                            <td>All image elements with the src attribute linking to image.jpg</td>
+                            <td> Used to select a specific element containing a specific tag.</td>
+                        </tr>
+
+                        <tr>
+                            <td>ID Selector</td>
+                            <td><span class="code"> #desc {}</span></td>
+                            <td>Selects the element with the "desc" ID attribute.</td>
+                            <td> The ID selector is used to select a specific element labled with the corosponding ID attribute.</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <p class="tfooters, lightitalic"> This table is organized in specificity. The further down the table you are, the more specific the selector is. More specific selectors override less specific selectors.</p>
+                    </tfoot>
+                </table>
+
+                <h3>Flex Boxes</h3>
+                <p class="lightitalic"> The Flexible box layout, or Flexbox, is a display tool that can be used as a simple way of creating an adaptive website layout. </p>
+                
+                <div ID="flexboxes">
+                    <div ID="display" class="infoFBox">
+                        <h3>The Display Property</h3>
+                        <p class="light">Setting the display property to flex or inline-flex will set that element to be a flexbox container. Allowing all <span class="italic">direct</span> children to be flexbox items. However, containers may also be flex-items themselves, if also nested within a flex-container.</p><br><br>
+
+                        <h4 class="code">Display: Flex;</h4>
+                        <br><br>
+                        <div ID="flex">
+                            <p>Item</p>
+                            <p>Item</p>
+                            <p>Item</p>
+                            <p>Item</p>
+                            <p>Item</p>
+                        </div>
+                        <br>
+                        
+                        <h4 class="code">Display: Inline-Flex;</h4>
+                        <br><br>
+                        
+                        <p class="light">Inline flex will allow the flex-container to be positioned inline with other elements:
+                        <div ID="inline-flex">
+                            <p>Item</p>
+                            <p>Item</p>
+                        </div>
+                        Allowing more posibilities for where they can be used!</p>
+                    </div>
+
+                    <div ID="Justify-Content" class="infoFBox">
+                        <h3>Justifying Content</h3>
+                        <p class="light">Justify-content is used to adjust the horizontal position of flexbox items, similar to how text is able to be justified. The Space Around and Between arguments position the items by adding space between or around both sides of them.</p>
+                    </div>
+                </div>
+
+                <!--<table ID="flexboxes">
+                    <thead>
+                        <tr>
+                            <th scope="col">Property</th>
+                            <th scope="col">Arguments</th>
+                            <th scope="col">Example</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Display</td>
+                            <td>Flex, Inline-Flex</td>
+                            <td> <span class="code">article {display: flex;}</span></td>
+                            <td>Setting the display property to flex or inline-flex will set that element to be a flexbox container. Allowing all <span class="italic">direct</span> children to be flexbox items. However, containers may also be flex-items themselves, if also nested within a flex-container.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Justify-Content</td>
+                            <td>Flex-start, Flex-end, Center, Space-Around, Space-Between</td>
+                            <td> <span class="code">section {justify-content: center;}</span></td>
+                            <td>Justify-content is used to adjust the horizontal position of flexbox items, similar to how text is able to be justified. The Space Around and Between arguments position the items by adding space between or around both sides of them.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Align-Items</td>
+                            <td>Flex-Start, Flex-End, Center, Baseline</td>
+                            <td><span class="code">main {align-items: baseline;}</span></td>
+                            <td>Align-Items is used to adjust the vertical position of flexbox items. Baseline sets the placement so that all elements have their bottom face aligned.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Flex-Grow</td>
+                            <td>0,1,2..</td>
+                            <td><span class="code">h2 {flex-grow: 1;}</span></td>
+                            <td>For flex items. This allows flex items to stretch to fill the space of it's containter if there's any available. Higher values will be prioritized and stretched more. IE, a value of 2 item will stretch more than a value of 1.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Flex-Shrink</td>
+                            <td>0,1,2..</td>
+                            <td><span class="code">p {flex-shrink: 1;}</span></td>
+                            <td>Inverse to Flex-Grow, this makes container items shrink if the container shrinks. By default items have a value set to 1, for shrink.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Flex-Basis</td>
+                            <td>Size Value (like 2px)</td>
+                            <td><span class="code">h1 {flex-basis: 20px;}</span></td>
+                            <td>This sets the default width of a flex item before shrinking or stretching is applied.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Flex</td>
+                            <td>3 inputs.</td>
+                            <td><span class="code">a {flex: 1 2 30px;}</span></td>
+                            <td>Flex is a shorthand property that combines Flex grow, shrink, and basis, in that order.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Flex-Wrap</td>
+                            <td>wrap, wrap-reverse, nowrap</td>
+                            <td><span class="code">main {flex-wrap: wrap;}</span></td>
+                            <td>This property causes the child elements of the flex container (flex items) to wrap if they dont fit on a line, instead of shrink.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Align-Content</td>
+                            <td>flex-start, flex-end, center, space-between, space-around, stretch</td>
+                            <td><span class="code">div {align-content: space-between;}</span></td>
+                            <td>Unlike Align-Items, this effects the rows of the container. So if more than one row of items needs to be configured, this can be used.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Flex-Direction</td>
+                            <td>row, row-reverse, column, column-reverse</td>
+                            <td><span class="code">article {flex-direction: column;}</span></td>
+                            <td>Changes the axis the flex items are aligned to when stretching, aligning, or other modifications are being made. Can make the vertical properties horizontal, as well as reversed.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Flex-Flow</td>
+                            <td>2 inputs</td>
+                            <td><span class="code">main {flex-flow: column nowrap;}</span></td>
+                            <td>Shorthand for Flex-Direction, and Flex-Wrap properties, in that order.</td>
+                        </tr>
+
+                    </tbody>
+                </table>-->
+
+                <h3>Grids</h3>
+                    <p class="lightitalic">Grids have a similar setup to flexboxes. When you set the display property to grid, or inline-grid, that element becomes a grid container, and its children will be grid items.</p>
+                <table ID="grids">
+                    <thead>
+                        <tr>
+                            <th scope="col">Property</th>
+                            <th scope="col">Arguments</th>
+                            <th scope="col">Example</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        
+                        <tr>
+                            <td>grid-template</td>
+                            <td>row variables / column variables</td>
+                            <td><span class="code">.grid {grid-template: 20px 50% 300px / 30% 20px 500px;}</span></td>
+                            <td>This combines 'grid-template-row' and 'grid-template-column' together as a single property. This allows you to set the size and number of columns and rows.</td>
+                        </tr>
+
+                        <tr>
+                            <td>grid-template-areas</td>
+                            <td>names</td>
+                            <td><span class="code">grid-template-areas: "header header";</span></td>
+                            <td>Allows you to name sections of your webpage that can be used to assign them to parts of the grid.</td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>

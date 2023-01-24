@@ -1,0 +1,106 @@
+
+h1 {
+    margin: 0% 0% 2% 2%;
+    padding-top: 4%;
+}
+
+h2 {
+    margin: 2% 0% 1% 6%;
+}
+
+h3 {
+    margin: 0% 10% 1% 10%;
+}
+
+p {
+    margin: 0% 10% 0.5% 11%;
+}
+
+#CSS {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    background-color:black;
+    min-width: 60%;
+    max-width: 80%;
+    margin: 0% 10% 5% 10%;
+}
+
+th {
+    background-color: #b6a594;
+    color:#000;
+    padding: 0.2%;
+}
+
+td {
+    background-color:#4a4841;
+    padding: 0.2%;
+}
+
+.tfooters {
+    margin-left: 100px;
+    margin-right: 20%;
+    font-style:italic;
+}
+
+/*FlexBox Section*/
+
+#flexboxes {
+    margin: 0% 10% 5% 10%;
+    border: 2px solid #000;
+    background-color:#b6a594;
+}
+
+#flexboxes h3 {
+    margin: 0.5% 0.5% 0.5% 0%;
+    padding: 0%;
+    display: inline-block;
+}
+
+#flexboxes h4 {
+    margin: 0.4%;
+    padding: 0%;
+    display: inline-block;
+}
+
+#flexboxes p {
+    display: inline-block;
+    margin: 0.1%;
+    padding: 0%;
+}
+
+.infoFBox {
+    border: #000 solid 2px;
+    margin: 10px 1% 10px 1%;
+    padding: 1%;
+    background-color: #4a4841;
+}
+
+
+#flex {
+    border: 2px solid #edda74;
+    display: flex;
+}
+
+#flex p {
+    margin: 0.5%;
+    border: 1px solid #000;
+    display: block;
+    color:#000;
+    background-color: #f5f5f5;
+}
+
+#inline-flex {
+    display: inline-flex;
+    border: 2px solid #edda74;
+}
+
+#inline-flex p {
+    margin: 1%;
+    border: 1px solid #000;
+    display: block;
+    color:#000;
+    background-color: #f5f5f5;
+}
